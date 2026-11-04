@@ -1,0 +1,7 @@
+# Contact info shown at the bottom of the About page.
+email: "" # TODO: e.g. "info@example.org" — leave "" to hide
+links: []
+# To add links, replace [] with a list like this:
+# links:
+#   - label: "ARRL"
+#     url: "https://www.arrl.org/"

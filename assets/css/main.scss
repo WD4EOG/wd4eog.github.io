@@ -1,0 +1,177 @@
+---
+# Front matter (these dashes) tells Jekyll to compile this file.
+---
+
+@charset "utf-8";
+
+/* ==========================================================================
+   WD4EOG colors: Clemson orange and a dark purple header.
+   Variables go BEFORE the theme imports so the theme picks them up.
+   ========================================================================== */
+
+$clemson-orange: #f56600;      // bars, stripes, highlights (not text, not buttons)
+$clemson-orange-dark: #b94a00; // readable as link text on a light background
+$clemson-purple: #2e1a47;      // header
+
+$sans-serif: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$sans-serif-narrow: $sans-serif;
+
+$background-color: #f8f6f4;
+$text-color: #1f1a24;
+$muted-text-color: #5e5866;
+$border-color: #e3dfe6;
+$primary-color: $clemson-purple;   // buttons and theme accents
+$link-color: $clemson-orange-dark;
+$footer-background-color: #efebf2;
+$masthead-link-color: #fff;
+$masthead-link-color-hover: #fff;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ==========================================================================
+   Header: purple bar with an orange stripe
+   ========================================================================== */
+
+.masthead {
+  background-color: $clemson-purple;
+  border-bottom: 4px solid $clemson-orange;
+}
+.greedy-nav { background: $clemson-purple; }
+.site-subtitle { color: rgba(#fff, 0.75); }
+
+.greedy-nav .visible-links a {
+  opacity: 0.85;
+  &::before { display: none; } // no underline on nav links
+  &:hover { opacity: 1; }
+}
+
+// Menu button on phones
+.greedy-nav .navicon,
+.greedy-nav .navicon::before,
+.greedy-nav .navicon::after { background: #fff; }
+.greedy-nav .close .navicon { background: transparent; }
+
+// Dropdown for nav links that don't fit (white box, so dark text)
+.greedy-nav .hidden-links a {
+  color: $text-color;
+  &:hover {
+    color: $clemson-purple;
+    background: mix(#fff, $clemson-purple, 88%);
+  }
+}
+
+/* ==========================================================================
+   Home page hero
+   ========================================================================== */
+
+.page__hero--overlay .page__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 2px;
+  background: $clemson-orange;
+}
+
+/* ==========================================================================
+   Page content
+   ========================================================================== */
+
+.lead {
+  color: $muted-text-color;
+  font-size: $type-size-4;
+}
+.muted { color: $muted-text-color; }
+
+.club-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.club-card {
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 1em;
+  min-width: 0;
+
+  h2, h3 { margin-top: 0; }
+  p { margin: 0 0 0.4em; font-size: $type-size-5; }
+  p:last-child { margin-bottom: 0; }
+  .meta { font-weight: 600; }
+}
+
+a.club-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  &:hover { border-color: $muted-text-color; }
+}
+
+.club-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+.club-dashboard { margin-bottom: 1.5em; }
+
+.club-embed {
+  display: block;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  background: #fff;
+  margin-top: 0.75em;
+}
+
+// Tables: orange line under the header row
+.page__content thead {
+  background: transparent;
+  border-bottom: 2px solid $clemson-orange;
+}
+.page__content th {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $muted-text-color;
+}
+
+// N0NBH solar widget (dashboards page)
+.solar-widget { text-align: center; margin-top: 0.75em; }
+.solar-widget img { max-width: 100%; height: auto; }
+.credit { color: $muted-text-color; font-size: $type-size-6; text-align: center; }
+
+// History timeline (about page)
+.timeline {
+  list-style: none;
+  margin: 0.75em 0 1.5em;
+  padding: 0 0 0 1em;
+  border-left: 3px solid $clemson-orange;
+
+  li { margin: 0 0 0.75em; }
+  .year { display: block; font-weight: 700; color: $clemson-orange-dark; }
+}
+
+// Photo grid (about page)
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1em;
+  margin: 1em 0 1.5em;
+
+  figure { margin: 0; min-width: 0; display: block; }
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid $border-color;
+  }
+  figcaption { color: $muted-text-color; font-size: $type-size-6; margin-top: 0.4em; }
+}

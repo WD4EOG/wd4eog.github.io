@@ -1,0 +1,50 @@
+# Site settings for Jekyll + Minimal Mistakes.
+# Changes to this file need a rebuild (GitHub Pages does this on every push).
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default" # colors are overridden in assets/css/main.scss
+
+locale: "en-US"
+title: "Clemson Amateur Radio Club"
+title_separator: "·"
+masthead_title: "WD4EOG"
+subtitle: "Clemson Amateur Radio Club"
+description: "Clemson Amateur Radio Club (WD4EOG): amateur radio practice, education and public service at Clemson since 1946."
+url: ""     # GitHub Pages fills these in; set them if you use a custom domain
+baseurl: ""
+search: false
+atom_feed:
+  hide: true
+
+footer:
+  links: []
+  #  - label: "Email"
+  #    icon: "fas fa-fw fa-envelope"
+  #    url: "mailto:info@example.org"
+
+markdown: kramdown
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - _archive
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: false
+      read_time: false
+      share: false
+      comments: false
+      related: false

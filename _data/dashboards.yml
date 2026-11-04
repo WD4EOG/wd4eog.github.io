@@ -1,0 +1,9 @@
+# Dashboards on the Dashboards page (Grafana or any embeddable page).
+# The url MUST start with https:// or browsers will block it.
+# For Grafana, adding "&kiosk" to the URL hides Grafana's menus.
+# Copy a block (starting with "- title") to add another dashboard.
+
+- title: "TODO: Dashboard title"
+  description: "TODO: What this dashboard shows."
+  url: "" # TODO: paste the https:// embed URL here
+  height: 400 # pixels

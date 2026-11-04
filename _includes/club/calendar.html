@@ -1,0 +1,9 @@
+{%- comment -%} Calendar embed from _data/calendar.yml. {%- endcomment -%}
+{%- assign cal = site.data.calendar -%}
+{%- assign link_scheme = cal.link_url | default: "" | strip | slice: 0, 8 | downcase -%}
+<div>
+{% include club/embed.html url=cal.embed_url title="Club calendar" height=cal.height file="calendar.yml" %}
+{%- if link_scheme == "https://" %}
+<p><a href="{{ cal.link_url | strip | escape }}" target="_blank" rel="noopener">Open the full calendar ↗</a></p>
+{%- endif %}
+</div>

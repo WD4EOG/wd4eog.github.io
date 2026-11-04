@@ -1,0 +1,16 @@
+{%- comment -%}
+  Meetup cards from _data/meetups.yml. Pass limit=1 to show only the first.
+{%- endcomment -%}
+{%- assign limit = include.limit | default: 100 -%}
+<div class="club-grid">
+{%- for m in site.data.meetups limit: limit -%}
+<article class="club-card">
+<h3>{{ m.name }}</h3>
+<p class="meta">{{ m.when }}</p>
+{%- if m.where and m.where != "" %}<p>{{ m.where }}</p>{% endif -%}
+{%- if m.notes and m.notes != "" %}<p class="muted">{{ m.notes }}</p>{% endif -%}
+</article>
+{%- else -%}
+<p class="notice">No meetups listed yet.</p>
+{%- endfor -%}
+</div>

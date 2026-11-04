@@ -1,0 +1,13 @@
+{%- comment -%}
+  An iframe embed, or a notice if the URL is missing or not https://.
+  Usage: {% include club/embed.html url=... title=... height=... file="dashboards.yml" %}
+{%- endcomment -%}
+{%- assign url = include.url | default: "" | strip -%}
+{%- assign scheme = url | slice: 0, 8 | downcase -%}
+{%- if url == "" -%}
+<p class="notice">No embed URL set yet. Add one in <code>_data/{{ include.file }}</code>.</p>
+{%- elsif scheme != "https://" -%}
+<p class="notice--warning">This URL must start with https:// or browsers will block it: {{ url | escape }}</p>
+{%- else -%}
+<iframe class="club-embed" src="{{ url | escape }}" title="{{ include.title | escape }}" loading="lazy" style="height: {{ include.height | default: 400 }}px" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+{%- endif -%}

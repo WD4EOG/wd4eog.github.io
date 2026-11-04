@@ -1,0 +1,4 @@
+# Calendar embed (Teamup, Outlook, Google, etc.). Use the provider's "embed" URL.
+embed_url: "" # TODO: https:// embed URL
+link_url: ""  # optional: link to open the full calendar in a new tab
+height: 600
