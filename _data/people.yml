@@ -1,0 +1,19 @@
+# The People page: a group photo and the officers.
+
+# Put the photo in assets/img/ and give its path here, e.g. "/assets/img/group.jpg".
+# Leave "" to hide it.
+group_photo: ""
+group_caption: ""
+
+# Officers, shown in this order. Only "name" is required; leave any other field "" to hide it.
+# "photo" is a path like "/assets/img/people/jane.jpg".
+# Copy a block (starting with "- name") to add another officer.
+officers: []
+# Replace [] above with a list like this:
+# officers:
+#   - name: "Jane Doe"
+#     role: "President"
+#     call: "KQ4ABC"
+#     email: "jdoe@clemson.edu"
+#     photo: ""
+#     bio: "Electrical engineering junior. Mostly on HF digital modes."

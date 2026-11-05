@@ -26,6 +26,9 @@ markdown: kramdown
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-redirect-from # old /calendar/, /repeaters/, etc. links forward to the new pages
+
+permalink: /blog/:year/:month/:day/:title/
 
 include:
   - _pages
@@ -45,6 +48,17 @@ defaults:
       classes: wide
       author_profile: false
       read_time: false
+      share: false
+      comments: false
+      related: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      show_date: true
       share: false
       comments: false
       related: false

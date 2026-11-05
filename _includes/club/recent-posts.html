@@ -1,0 +1,15 @@
+{%- comment -%}
+  Cards for the newest blog posts. Pass limit=3 to show fewer.
+{%- endcomment -%}
+{%- assign limit = include.limit | default: 100 -%}
+<div class="club-grid">
+{%- for post in site.posts limit: limit -%}
+<a class="club-card" href="{{ post.url | relative_url }}">
+<h3>{{ post.title }}</h3>
+<p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+{%- if post.excerpt %}<p class="muted">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>{% endif -%}
+</a>
+{%- else -%}
+<p class="notice">No posts yet.</p>
+{%- endfor -%}
+</div>

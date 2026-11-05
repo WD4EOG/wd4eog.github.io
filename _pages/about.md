@@ -1,13 +1,23 @@
 ---
 title: "About the club"
 permalink: /about/
-description: "About the Clemson Amateur Radio Club (WD4EOG): amateur radio practice, education and public service at Clemson since 1946."
+redirect_from:
+  - /calendar/
+  - /resources/
+description: "About the Clemson Amateur Radio Club (WD4EOG): who we are, our history, when we meet, and how to get licensed."
 ---
 
 <p class="lead">
 The Clemson Amateur Radio Club (WD4EOG) is built around amateur radio practice,
 education and public service. Ham radio is a hands-on, experimental hobby, and
 members come away with real-world skills.
+</p>
+
+<p class="jump">On this page:
+<a href="#what-we-do">What we do</a>
+<a href="#get-involved">Get involved</a>
+<a href="#get-licensed">Get licensed</a>
+<a href="#our-history">Our history</a>
 </p>
 
 ## What we do
@@ -27,6 +37,28 @@ members come away with real-world skills.
 </article>
 </div>
 
+We're part of the ARRL Collegiate Amateur Radio Program (CARP) and take an active part
+in its activities, including representing the club at Dayton Hamvention in Ohio.
+Follow what we're up to on the [blog]({{ '/blog/' | relative_url }}), see our station
+on the [Shack]({{ '/shack/' | relative_url }}) page, and meet the officers on the
+[People]({{ '/people/' | relative_url }}) page.
+
+## Get involved
+
+No license is needed to come to a meeting. Stop by and see what we do.
+
+{% include club/meetups.html %}
+
+### Event calendar
+
+{% include club/calendar.html %}
+
+## Get licensed
+
+Want to get on the air yourself? These are good places to start.
+
+{% include club/resources.html %}
+
 ## Our history
 
 There has been a radio club at Clemson since at least 1946, and it has gone through plenty of changes since then.
@@ -37,50 +69,3 @@ There has been a radio club at Clemson since at least 1946, and it has gone thro
 <li><span class="year">~2010</span> Members worked on the tower and assembled its beam antennas.</li>
 <li><span class="year">2015</span> Antenna work high on the tower with the help of a ladder truck.</li>
 </ul>
-
-## The shack
-
-Our station, the "shack," is on Kite Hill on Clemson's campus, next to the public
-service tower and the water tank. Inside are several high-end radios, and outside is a
-tower about 70&nbsp;ft tall with a Yagi beam antenna.
-
-<div class="photos">
-<figure>
-<img src="{{ '/assets/img/shack-exterior.jpg' | relative_url }}" alt="The white cinder-block shack with a lattice tower in front and antennas on the roof" loading="lazy">
-<figcaption>The shack</figcaption>
-</figure>
-<figure>
-<img src="{{ '/assets/img/shack-shelves.jpg' | relative_url }}" alt="Shelves of radio equipment, power supplies and manuals above a desk in the shack" loading="lazy">
-<figcaption>Inside the shack</figcaption>
-</figure>
-<figure>
-<img src="{{ '/assets/img/towers.jpg' | relative_url }}" alt="The club's tower with a Yagi beam antenna, beside taller towers on Kite Hill" loading="lazy">
-<figcaption>Our tower and Yagi on Kite Hill</figcaption>
-</figure>
-<figure>
-<img src="{{ '/assets/img/antenna-closeup.jpg' | relative_url }}" alt="Close-up of the beam antenna at the top of the tower" loading="lazy">
-<figcaption>The antenna, due for replacement</figcaption>
-</figure>
-</div>
-
-## Get involved
-
-No license is needed to come to a meeting. Stop by and see what we do.
-
-{% include club/meetups.html %}
-
-## Collegiate Amateur Radio Program
-
-We're part of the ARRL Collegiate Amateur Radio Program (CARP) and take an active part
-in its activities, including representing the club at Dayton Hamvention in Ohio.
-
-## What we're working on
-
-Our tower's antenna was last serviced around 2012, and its elements are now damaged,
-which keeps our radios from reaching their full potential. We're planning to replace it,
-likely with a new tower and an upgraded antenna, and to add a
-[SatNOGS](https://satnogs.org/){: target="_blank" rel="noopener"} satellite ground station.
-
-## Contact & links
-
-{% include club/contact.html %}

@@ -1,0 +1,12 @@
+{%- comment -%} Equipment cards from _data/equipment.yml. {%- endcomment -%}
+<div class="club-grid">
+{%- for e in site.data.equipment -%}
+<article class="club-card">
+<h3>{{ e.name }}</h3>
+{%- if e.category and e.category != "" %}<p class="meta">{{ e.category }}</p>{% endif -%}
+{%- if e.details and e.details != "" %}<p class="muted">{{ e.details }}</p>{% endif -%}
+</article>
+{%- else -%}
+<p class="notice">No equipment listed yet.</p>
+{%- endfor -%}
+</div>

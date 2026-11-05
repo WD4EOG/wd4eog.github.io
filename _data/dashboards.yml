@@ -1,4 +1,4 @@
-# Dashboards on the Dashboards page (Grafana or any embeddable page).
+# Dashboards on the Shack page, under "Live data" (Grafana or any embeddable page).
 # The url MUST start with https:// or browsers will block it.
 # For Grafana, adding "&kiosk" to the URL hides Grafana's menus.
 # Copy a block (starting with "- title") to add another dashboard.

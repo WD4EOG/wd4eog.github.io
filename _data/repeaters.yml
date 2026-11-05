@@ -1,4 +1,4 @@
-# Repeaters. "offset" is e.g. "-0.600" or "+5.000"; "tone" is CTCSS/DCS.
+# Repeaters on the Shack page. "offset" is e.g. "-0.600" or "+5.000"; "tone" is CTCSS/DCS.
 
 - call: "WD4EOG"
   output: "444.625"

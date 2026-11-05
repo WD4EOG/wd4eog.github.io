@@ -4,7 +4,7 @@
 {%- assign scheme = d.url | default: "" | strip | slice: 0, 8 | downcase -%}
 <article class="club-card club-dashboard">
 <div class="club-card-head">
-<h2>{{ d.title }}</h2>
+<h3>{{ d.title }}</h3>
 {%- if scheme == "https://" %}<a href="{{ d.url | strip | escape }}" target="_blank" rel="noopener">Open full screen ↗</a>{% endif -%}
 </div>
 {%- if d.description and d.description != "" %}<p class="muted">{{ d.description }}</p>{% endif -%}

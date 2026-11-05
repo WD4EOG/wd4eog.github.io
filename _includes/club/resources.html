@@ -1,12 +1,12 @@
 {%- comment -%} Grouped link cards from _data/resources.yml. {%- endcomment -%}
 <div>
 {%- for g in site.data.resources -%}
-<h2>{{ g.group }}</h2>
+<h3>{{ g.group }}</h3>
 <div class="club-grid">
 {%- for r in g.items -%}
 {%- if r.url -%}
 <a class="club-card" href="{{ r.url | escape }}" target="_blank" rel="noopener">
-<h3>{{ r.title | default: r.url }} ↗</h3>
+<h4>{{ r.title | default: r.url }} ↗</h4>
 {%- if r.description and r.description != "" %}<p class="muted">{{ r.description }}</p>{% endif -%}
 </a>
 {%- endif -%}

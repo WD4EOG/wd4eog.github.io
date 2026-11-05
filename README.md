@@ -21,26 +21,42 @@ GitHub builds the site automatically on every push. There's no JavaScript to edi
 
 Most content lives in the YAML files in **`_data/`**. Edit one, commit it, and the site rebuilds.
 
+The site has four sections: **About**, **Blog**, **Shack** and **People**.
+
 | File | What it controls |
 | --- | --- |
-| `_data/meetups.yml` | Meetings and nets. The first one is featured on the home page. |
-| `_data/dashboards.yml` | Dashboards: `title`, `description`, `url`, `height`. |
-| `_data/calendar.yml` | The calendar's `embed_url` (and an optional `link_url`). |
-| `_data/repeaters.yml` | The repeater table. |
-| `_data/mesh_nodes.yml` | MeshCore routers on the Repeaters page. |
-| `_data/resources.yml` | Grouped links on the Resources page. |
-| `_data/club.yml` | Contact email and links at the bottom of the About page. |
+| `_data/meetups.yml` | Meetings and nets (About page). The first one is also featured on the home page. |
+| `_data/calendar.yml` | The calendar's `embed_url` (and an optional `link_url`), on the About page. |
+| `_data/resources.yml` | Grouped learning links under "Get licensed" on the About page. |
+| `_data/equipment.yml` | Equipment cards on the Shack page. |
+| `_data/repeaters.yml` | The repeater table on the Shack page. |
+| `_data/mesh_nodes.yml` | MeshCore routers on the Shack page. |
+| `_data/dashboards.yml` | Dashboards under "Live data" on the Shack page: `title`, `description`, `url`, `height`. |
+| `_data/guides.yml` | How-to guides (SOPs) on the Shack page. Put PDFs in `assets/docs/`. |
+| `_data/people.yml` | The group photo and officer cards on the People page. |
+| `_data/club.yml` | Contact email and links at the bottom of the People page. |
 | `_data/navigation.yml` | Links in the header bar. |
 
 YAML tips: indentation matters (use spaces, not tabs), and put text in "double quotes".
 
-Page text is in **`_pages/`** (`about.md`, `dashboards.md`, …) and the home page is **`index.md`**.
+Page text is in **`_pages/`** (`about.md`, `shack.md`, …) and the home page is **`index.md`**.
 These are Markdown, and plain HTML works inside them too.
 Site-wide settings (title, footer links) are in **`_config.yml`**.
 
 - **Colors and fonts** are at the top of **`assets/css/main.scss`**.
 - **Photos** live in `assets/img/`.
-- The N0NBH solar widget on the Dashboards page requires full attribution. Keep its link and credit.
+- The N0NBH solar widget on the Shack page requires full attribution. Keep its link and credit.
+
+### Writing a blog post
+Add a Markdown file to **`_posts/`** named `YYYY-MM-DD-short-title.md` (for example `2026-11-04-replacing-the-antenna.md`) that starts with:
+
+```
+---
+title: "Your post title"
+---
+```
+
+Then write the post below it. The newest posts show up on the Blog page and the home page.
 
 ### Embed requirements
 - URLs **must start with `https://`**. The site is served over HTTPS, and browsers block `http://` iframes.

@@ -1,12 +1,10 @@
 # Links in the purple header bar, in order. "WD4EOG" on the left already links home.
 main:
-  - title: "Dashboards"
-    url: /dashboards/
-  - title: "Calendar"
-    url: /calendar/
-  - title: "Repeaters"
-    url: /repeaters/
-  - title: "Resources"
-    url: /resources/
   - title: "About"
     url: /about/
+  - title: "Blog"
+    url: /blog/
+  - title: "Shack"
+    url: /shack/
+  - title: "People"
+    url: /people/

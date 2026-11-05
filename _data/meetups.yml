@@ -1,5 +1,5 @@
 # Recurring meetings and nets, listed in this order.
-# The first one is featured on the home page.
+# Shown on the About page; the first one is also featured on the home page.
 
 - name: "Club meeting"
   when: "Every other Wednesday, 5:00–7:00 PM"

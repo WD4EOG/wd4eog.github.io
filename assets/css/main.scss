@@ -99,7 +99,7 @@ $masthead-link-color-hover: #fff;
   padding: 1em;
   min-width: 0;
 
-  h2, h3 { margin-top: 0; }
+  h2, h3, h4 { margin-top: 0; }
   p { margin: 0 0 0.4em; font-size: $type-size-5; }
   p:last-child { margin-bottom: 0; }
   .meta { font-weight: 600; }
@@ -158,7 +158,7 @@ a.club-card {
   .year { display: block; font-weight: 700; color: $clemson-orange-dark; }
 }
 
-// Photo grid (about page)
+// Photo grid (shack page)
 .photos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -173,5 +173,38 @@ a.club-card {
     border-radius: 8px;
     border: 1px solid $border-color;
   }
+  figcaption { color: $muted-text-color; font-size: $type-size-6; margin-top: 0.4em; }
+}
+
+// "On this page" links under a page's intro
+.jump {
+  font-size: $type-size-6;
+  color: $muted-text-color;
+
+  a { margin-left: 0.75em; white-space: nowrap; }
+}
+
+// Officer cards (people page)
+.club-person {
+  img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid $clemson-orange;
+    margin-bottom: 0.5em;
+  }
+  .callsign {
+    font-family: $monospace;
+    font-weight: 700;
+    color: $clemson-orange-dark;
+  }
+}
+
+// Group photo (people page)
+.group-photo {
+  margin: 0 0 1.5em;
+
+  img { width: 100%; border-radius: 8px; border: 1px solid $border-color; }
   figcaption { color: $muted-text-color; font-size: $type-size-6; margin-top: 0.4em; }
 }

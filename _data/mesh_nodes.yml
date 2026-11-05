@@ -1,4 +1,4 @@
-# MeshCore routers, shown on the Repeaters page under "Mesh network".
+# MeshCore routers, shown on the Shack page under "Mesh network".
 
 - name: "WD4EOG MeshCore router"
   operator: "Clemson Amateur Radio Club"

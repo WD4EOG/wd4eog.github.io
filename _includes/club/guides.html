@@ -1,0 +1,19 @@
+{%- comment -%}
+  Guide cards from _data/guides.yml. Site paths like /assets/docs/x.pdf get the
+  baseurl added; full https:// links are used as-is.
+{%- endcomment -%}
+<div class="club-grid">
+{%- for g in site.data.guides -%}
+{%- assign url = g.url | default: "" | strip -%}
+{%- if url != "" -%}
+{%- assign scheme = url | slice: 0, 4 | downcase -%}
+{%- unless scheme == "http" %}{% assign url = url | relative_url %}{% endunless -%}
+<a class="club-card" href="{{ url | escape }}" target="_blank" rel="noopener">
+<h3>{{ g.title | default: url }} ↗</h3>
+{%- if g.description and g.description != "" %}<p class="muted">{{ g.description }}</p>{% endif -%}
+</a>
+{%- endif -%}
+{%- else -%}
+<p class="notice">No guides posted yet. Put PDFs in <code>assets/docs/</code> and list them in <code>_data/guides.yml</code>.</p>
+{%- endfor -%}
+</div>
