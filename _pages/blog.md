@@ -1,9 +1,6 @@
 ---
-title: "Blog"
+title: Posts
 permalink: /blog/
-description: "Updates on Clemson Amateur Radio Club projects and activities."
+layout: posts
+author_profile: true
 ---
-
-<p class="lead">Updates on our projects and the other things we do as a club.</p>
-
-{% include club/recent-posts.html %}

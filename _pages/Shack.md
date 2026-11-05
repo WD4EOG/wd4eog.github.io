@@ -1,11 +1,9 @@
 ---
-title: "The shack"
-permalink: /shack/
-redirect_from:
-  - /repeaters/
-  - /dashboards/
-description: "The WD4EOG station on Kite Hill: equipment, repeaters, live data and how-to guides."
+permalink: /Shack/
+title: Clemson Shack
+classes: wide
 ---
+
 
 <p class="lead">
 Our station, the "shack," is on Kite Hill on Clemson's campus, next to the public
@@ -22,19 +20,19 @@ tower about 70&nbsp;ft tall with a Yagi beam antenna.
 
 <div class="photos">
 <figure>
-<img src="{{ '/assets/img/shack-exterior.jpg' | relative_url }}" alt="The white cinder-block shack with a lattice tower in front and antennas on the roof" loading="lazy">
+<img src="{{ '/assets/images/shack-exterior.jpg' | relative_url }}" alt="The white cinder-block shack with a lattice tower in front and antennas on the roof" loading="lazy">
 <figcaption>The shack</figcaption>
 </figure>
 <figure>
-<img src="{{ '/assets/img/shack-shelves.jpg' | relative_url }}" alt="Shelves of radio equipment, power supplies and manuals above a desk in the shack" loading="lazy">
+<img src="{{ '/assets/images/shack-shelves.jpg' | relative_url }}" alt="Shelves of radio equipment, power supplies and manuals above a desk in the shack" loading="lazy">
 <figcaption>Inside the shack</figcaption>
 </figure>
 <figure>
-<img src="{{ '/assets/img/towers.jpg' | relative_url }}" alt="The club's tower with a Yagi beam antenna, beside taller towers on Kite Hill" loading="lazy">
+<img src="{{ '/assets/images/towers.jpg' | relative_url }}" alt="The club's tower with a Yagi beam antenna, beside taller towers on Kite Hill" loading="lazy">
 <figcaption>Our tower and Yagi on Kite Hill</figcaption>
 </figure>
 <figure>
-<img src="{{ '/assets/img/antenna-closeup.jpg' | relative_url }}" alt="Close-up of the beam antenna at the top of the tower" loading="lazy">
+<img src="{{ '/assets/images/antenna-closeup.jpg' | relative_url }}" alt="Close-up of the beam antenna at the top of the tower" loading="lazy">
 <figcaption>The antenna, due for replacement</figcaption>
 </figure>
 </div>

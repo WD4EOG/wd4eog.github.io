@@ -1,0 +1,8 @@
+{
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_drafts",
+  "attachmentFolderPath": "assets/images"
+}

@@ -1,10 +1,9 @@
-# Links in the purple header bar, in order. "WD4EOG" on the left already links home.
 main:
-  - title: "About"
-    url: /about/
   - title: "Blog"
     url: /blog/
   - title: "Shack"
-    url: /shack/
-  - title: "People"
-    url: /people/
+    url: /Shack/
+  - title: "Officers"
+    url: /officers/
+  - title: "About"
+    url: /about/

@@ -1,5 +1,13 @@
 ---
+classes: wide
 title: "Replacing the antenna, and a satellite ground station"
+date: 2026-11-04T12:00:00
+categories:
+  - blog
+tags:
+  - shack
+  - antennas
+  - satellites
 ---
 
 Our tower's antenna was last serviced around 2012, and its elements are now damaged,
@@ -12,4 +20,4 @@ they pass over Clemson.
 
 We'll post updates here as the project moves along.
 
-![Close-up of the damaged beam antenna at the top of the tower]({{ '/assets/img/antenna-closeup.jpg' | relative_url }})
+![Close-up of the damaged beam antenna at the top of the tower]({{ '/assets/images/antenna-closeup.jpg' | relative_url }})

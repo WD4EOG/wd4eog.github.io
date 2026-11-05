@@ -1,64 +1,100 @@
-# Site settings for Jekyll + Minimal Mistakes.
-# Changes to this file need a rebuild (GitHub Pages does this on every push).
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "default" # colors are overridden in assets/css/main.scss
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: WD4EOG | Clemson Amateur Radio Club
+email: ke8tje@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Clemson Amateur Radio Club (WD4EOG): amateur radio practice, education and public service at Clemson.
+#twitter_username: username
+github_username: wd4eog
+minimal_mistakes_skin: default
+search: true
 
-locale: "en-US"
-title: "Clemson Amateur Radio Club"
-title_separator: "·"
-masthead_title: "WD4EOG"
-subtitle: "Clemson Amateur Radio Club"
-description: "Clemson Amateur Radio Club (WD4EOG): amateur radio practice, education and public service at Clemson since 1946."
-url: ""     # GitHub Pages fills these in; set them if you use a custom domain
-baseurl: ""
-search: false
-atom_feed:
-  hide: true
-
-footer:
-  links: []
-  #  - label: "Email"
-  #    icon: "fas fa-fw fa-envelope"
-  #    url: "mailto:info@example.org"
-
+# Build settings
 markdown: kramdown
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-  - jekyll-redirect-from # old /calendar/, /repeaters/, etc. links forward to the new pages
-
-permalink: /blog/:year/:month/:day/:title/
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - _archive
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# Analytics
+# analytics:
+#  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+#  google:
+#    tracking_id          : "G-KL8MLP357W" 
+#    anonymize_ip         : # true, false (default)
+
+author:
+  name   : " WD4EOG"
+  avatar : "/assets/images/CARC_logo.png"
+  bio    : "Come join us and explore the world of Amateur radio at Clemson."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wd4eog"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wd4eog"
+
 
 defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      classes: wide
-      author_profile: false
-      read_time: false
-      share: false
-      comments: false
-      related: false
+  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
       author_profile: false
-      read_time: true
-      show_date: true
-      share: false
-      comments: false
-      related: false
+      read_time: false
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+

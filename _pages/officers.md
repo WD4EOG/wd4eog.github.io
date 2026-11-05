@@ -1,6 +1,7 @@
 ---
-title: "People"
-permalink: /people/
+permalink: /officers/
+title: "Officers"
+classes: wide
 description: "The members and officers of the Clemson Amateur Radio Club (WD4EOG), and how to reach us."
 ---
 

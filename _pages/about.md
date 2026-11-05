@@ -1,11 +1,9 @@
 ---
-title: "About the club"
 permalink: /about/
-redirect_from:
-  - /calendar/
-  - /resources/
-description: "About the Clemson Amateur Radio Club (WD4EOG): who we are, our history, when we meet, and how to get licensed."
+title: "About"
+classes: wide
 ---
+
 
 <p class="lead">
 The Clemson Amateur Radio Club (WD4EOG) is built around amateur radio practice,
@@ -17,7 +15,7 @@ members come away with real-world skills.
 <a href="#what-we-do">What we do</a>
 <a href="#get-involved">Get involved</a>
 <a href="#get-licensed">Get licensed</a>
-<a href="#our-history">Our history</a>
+<a href="#history">History</a>
 </p>
 
 ## What we do
@@ -40,8 +38,8 @@ members come away with real-world skills.
 We're part of the ARRL Collegiate Amateur Radio Program (CARP) and take an active part
 in its activities, including representing the club at Dayton Hamvention in Ohio.
 Follow what we're up to on the [blog]({{ '/blog/' | relative_url }}), see our station
-on the [Shack]({{ '/shack/' | relative_url }}) page, and meet the officers on the
-[People]({{ '/people/' | relative_url }}) page.
+on the [Shack]({{ '/Shack/' | relative_url }}) page, and meet the officers on the
+[Officers]({{ '/officers/' | relative_url }}) page.
 
 ## Get involved
 
@@ -59,7 +57,7 @@ Want to get on the air yourself? These are good places to start.
 
 {% include club/resources.html %}
 
-## Our history
+## History
 
 There has been a radio club at Clemson since at least 1946, and it has gone through plenty of changes since then.
 
