@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/Shack.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Shack"
+              "title": "README"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_pages/Shack.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,8 +201,8 @@
   },
   "active": "5b27006c033d4ecd",
   "lastOpenFiles": [
-    "_pages/about.md",
     "_pages/Shack.md",
+    "_pages/about.md",
     "_pages/404.md",
     "_posts/2026-11-04-new-website-and-blog.md",
     "_drafts/2026-09-28-sample-Hasith.md",
