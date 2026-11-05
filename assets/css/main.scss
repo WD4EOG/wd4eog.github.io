@@ -1,0 +1,125 @@
+---
+# Front matter (these dashes) tells Jekyll to compile this file.
+---
+
+@charset "utf-8";
+
+// The theme's own styles, in the skin set in _config.yml.
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ==========================================================================
+   Layout for the club's cards, photos and timeline. Colors and fonts all
+   come from the skin, so changing minimal_mistakes_skin restyles these too.
+   ========================================================================== */
+
+.lead {
+  color: $muted-text-color;
+  font-size: $type-size-4;
+}
+.muted { color: $muted-text-color; }
+
+.club-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.club-card {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 1em;
+  min-width: 0;
+
+  h2, h3, h4 { margin-top: 0; }
+  p { margin: 0 0 0.4em; font-size: $type-size-5; }
+  p:last-child { margin-bottom: 0; }
+  .meta { font-weight: bold; }
+}
+
+a.club-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  &:hover { border-color: $primary-color; }
+}
+
+.club-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+.club-dashboard { margin-bottom: 1.5em; }
+
+.club-embed {
+  display: block;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  margin-top: 0.75em;
+}
+
+// "On this page" links under a page's intro
+.jump {
+  font-size: $type-size-6;
+  color: $muted-text-color;
+
+  a { margin-left: 0.75em; white-space: nowrap; }
+}
+
+// N0NBH solar widget (Shack page)
+.solar-widget { text-align: center; margin-top: 0.75em; }
+.solar-widget img { max-width: 100%; height: auto; }
+.credit { color: $muted-text-color; font-size: $type-size-6; text-align: center; }
+
+// History timeline (About page)
+.timeline {
+  list-style: none;
+  margin: 0.75em 0 1.5em;
+  padding: 0 0 0 1em;
+  border-left: 3px solid $primary-color;
+
+  li { margin: 0 0 0.75em; }
+  .year { display: block; font-weight: bold; }
+}
+
+// Photo grid (Shack page)
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1em;
+  margin: 1em 0 1.5em;
+
+  figure { margin: 0; min-width: 0; display: block; }
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+  figcaption { color: $muted-text-color; font-size: $type-size-6; margin-top: 0.4em; }
+}
+
+// Officer cards (Officers page)
+.club-person {
+  img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+  }
+  .callsign { font-family: $monospace; font-weight: bold; }
+}
+
+// Group photo (Officers page)
+.group-photo {
+  margin: 0 0 1.5em;
+
+  img { width: 100%; border-radius: $border-radius; }
+  figcaption { color: $muted-text-color; font-size: $type-size-6; margin-top: 0.4em; }
+}

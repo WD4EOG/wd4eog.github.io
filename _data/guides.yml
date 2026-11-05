@@ -1,0 +1,9 @@
+# How-to guides (SOPs) on the Shack page.
+# For a PDF, put the file in assets/docs/ and use a url like "/assets/docs/hf-station.pdf".
+# A full https:// link (e.g. a Google Doc) works too.
+# Copy a block (starting with "- title") to add another guide.
+[]
+# Replace [] above with a list like this:
+# - title: "Getting on the air with the HF station"
+#   description: "Power-up order, tuning the amp, and logging a contact."
+#   url: "/assets/docs/hf-station.pdf"

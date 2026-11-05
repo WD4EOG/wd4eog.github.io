@@ -1,0 +1,9 @@
+# Repeaters on the Shack page. "offset" is e.g. "-0.600" or "+5.000"; "tone" is CTCSS/DCS.
+
+- call: "WD4EOG"
+  output: "444.625"
+  offset: "+5.000"
+  tone: "167.9 Hz"
+  location: "Byrnes Hall rooftop"
+  mode: "FM"
+  notes: ""

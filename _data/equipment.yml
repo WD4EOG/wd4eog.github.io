@@ -1,0 +1,10 @@
+# Equipment on the Shack page, shown as cards in this order.
+# Copy a block (starting with "- name") to add an item; leave a field "" to hide it.
+
+- name: "Tower and Yagi beam"
+  category: "Antennas"
+  details: "A tower about 70 ft tall with a Yagi beam antenna. The elements are damaged and due for replacement."
+
+# - name: "TODO: radio make and model"
+#   category: "HF transceiver"
+#   details: "Bands, power, what it's good for."

@@ -1,0 +1,7 @@
+# Recurring meetings and nets, listed in this order.
+# Shown on the About page; the first one is also featured on the home page.
+
+- name: "Club meeting"
+  when: "Every other Wednesday, 5:00–7:00 PM"
+  where: "The shack on Kite Hill"
+  notes: "No license needed. Just show up!"

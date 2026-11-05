@@ -3,5 +3,7 @@ main:
     url: /blog/
   - title: "Shack"
     url: /Shack/
+  - title: "Officers"
+    url: /officers/
   - title: "About"
     url: /about/

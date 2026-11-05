@@ -1,0 +1,11 @@
+# MeshCore routers, shown on the Shack page under "Mesh network".
+
+- name: "WD4EOG MeshCore router"
+  operator: "Clemson Amateur Radio Club"
+  location: "Byrnes Hall rooftop"
+  notes: ""
+
+- name: "Anderson Radio Club MeshCore router"
+  operator: "Anderson Radio Club"
+  location: "Byrnes Hall rooftop"
+  notes: ""

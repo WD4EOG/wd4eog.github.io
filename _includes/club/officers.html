@@ -1,0 +1,15 @@
+{%- comment -%} Officer cards from _data/people.yml. {%- endcomment -%}
+<div class="club-grid">
+{%- for p in site.data.people.officers -%}
+<article class="club-card club-person">
+{%- if p.photo and p.photo != "" %}<img src="{{ p.photo | relative_url }}" alt="{{ p.name | escape }}" loading="lazy">{% endif %}
+<h3>{{ p.name }}</h3>
+{%- if p.role and p.role != "" %}<p class="meta">{{ p.role }}</p>{% endif -%}
+{%- if p.call and p.call != "" %}<p class="callsign">{{ p.call }}</p>{% endif -%}
+{%- if p.email and p.email != "" %}<p><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>{% endif -%}
+{%- if p.bio and p.bio != "" %}<p class="muted">{{ p.bio }}</p>{% endif -%}
+</article>
+{%- else -%}
+<p class="notice">Officer list coming soon.</p>
+{%- endfor -%}
+</div>

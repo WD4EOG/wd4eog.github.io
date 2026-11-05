@@ -16,7 +16,7 @@
 title: WD4EOG | Clemson Amateur Radio Club
 email: ke8tje@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  BikeClemson is a place where you can find general bike-related activities in and around the city of Clemson.
+  Clemson Amateur Radio Club (WD4EOG): amateur radio practice, education and public service at Clemson.
 #twitter_username: username
 github_username: wd4eog
 minimal_mistakes_skin: default
@@ -67,22 +67,15 @@ author:
   avatar : "/assets/images/CARC_logo.png"
   bio    : "Come join us and explore the world of Amateur radio at Clemson."
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:bikeclemson@gmail.com"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/bikeclemson"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wd4eog"
 
 footer:
   links:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/bikeclemson"
-
-header:
-  overlay_image: /assets/images/bikeclemson_banner.svg
-  overlay_filter: 0.25
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wd4eog"
 
 
 defaults:

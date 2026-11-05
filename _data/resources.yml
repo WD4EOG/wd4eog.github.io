@@ -1,0 +1,24 @@
+# Learning links on the About page (under "Get licensed"), shown in groups.
+# Copy an item (starting with "- title") to add a link,
+# or copy a whole group (starting with "- group") to add a new heading.
+
+- group: "Getting licensed"
+  items:
+    - title: "HamRadioPrep"
+      url: "https://hamradioprep.com/"
+      description: "Study courses and practice exams for the Technician, General and Extra license tests."
+    - title: "FCC Amateur Radio Service"
+      url: "https://www.fcc.gov/wireless/bureau-divisions/mobility-division/amateur-radio-service"
+      description: "The official rules, licensing information and license lookups from the FCC."
+
+- group: "Learning Morse code"
+  items:
+    - title: "Learn CW Online (LCWO)"
+      url: "https://lcwo.net/"
+      description: "Free, browser-based Morse code lessons and practice."
+
+- group: "Listen in"
+  items:
+    - title: "W2JKT online SDR"
+      url: "https://w2jkt.com/sdr.html"
+      description: "A web-based software-defined radio with decoders for different modes, run by W2JKT, a friend of the club."

@@ -1,0 +1,17 @@
+{%- comment -%} Contact email and links from _data/club.yml. {%- endcomment -%}
+{%- assign club = site.data.club -%}
+<div>
+{%- if club.email and club.email != "" %}
+<p>Email: <a href="mailto:{{ club.email }}">{{ club.email }}</a></p>
+{%- endif -%}
+{%- if club.links.size > 0 %}
+<ul>
+{%- for l in club.links %}
+<li><a href="{{ l.url | escape }}" target="_blank" rel="noopener">{{ l.label | default: l.url }}</a></li>
+{%- endfor %}
+</ul>
+{%- endif -%}
+{%- if club.email == "" and club.links.size == 0 %}
+<p class="notice">Contact info coming soon.</p>
+{%- endif %}
+</div>

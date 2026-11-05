@@ -1,0 +1,13 @@
+{%- comment -%} MeshCore router cards from _data/mesh_nodes.yml. {%- endcomment -%}
+<div class="club-grid">
+{%- for n in site.data.mesh_nodes -%}
+<article class="club-card">
+<h3>{{ n.name }}</h3>
+{%- if n.operator and n.operator != "" %}<p class="meta">{{ n.operator }}</p>{% endif -%}
+{%- if n.location and n.location != "" %}<p>{{ n.location }}</p>{% endif -%}
+{%- if n.notes and n.notes != "" %}<p class="muted">{{ n.notes }}</p>{% endif -%}
+</article>
+{%- else -%}
+<p class="notice">No mesh nodes listed yet.</p>
+{%- endfor -%}
+</div>

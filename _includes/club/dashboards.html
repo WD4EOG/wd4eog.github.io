@@ -1,0 +1,16 @@
+{%- comment -%} Dashboard cards from _data/dashboards.yml. {%- endcomment -%}
+<div>
+{%- for d in site.data.dashboards -%}
+{%- assign scheme = d.url | default: "" | strip | slice: 0, 8 | downcase -%}
+<article class="club-card club-dashboard">
+<div class="club-card-head">
+<h3>{{ d.title }}</h3>
+{%- if scheme == "https://" %}<a href="{{ d.url | strip | escape }}" target="_blank" rel="noopener">Open full screen ↗</a>{% endif -%}
+</div>
+{%- if d.description and d.description != "" %}<p class="muted">{{ d.description }}</p>{% endif -%}
+{% include club/embed.html url=d.url title=d.title height=d.height file="dashboards.yml" %}
+</article>
+{%- else -%}
+<p class="notice">No dashboards configured yet.</p>
+{%- endfor -%}
+</div>

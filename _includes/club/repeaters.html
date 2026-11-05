@@ -1,0 +1,17 @@
+{%- comment -%} Repeater table from _data/repeaters.yml. {%- endcomment -%}
+<div>
+{%- if site.data.repeaters.size > 0 -%}
+<table>
+<thead>
+<tr><th scope="col">Call</th><th scope="col">Output (MHz)</th><th scope="col">Offset</th><th scope="col">Tone</th><th scope="col">Location</th><th scope="col">Mode</th><th scope="col">Notes</th></tr>
+</thead>
+<tbody>
+{%- for r in site.data.repeaters %}
+<tr><td><strong>{{ r.call }}</strong></td><td>{{ r.output }}</td><td>{{ r.offset }}</td><td>{{ r.tone }}</td><td>{{ r.location }}</td><td>{{ r.mode }}</td><td>{{ r.notes }}</td></tr>
+{%- endfor %}
+</tbody>
+</table>
+{%- else -%}
+<p class="notice">No repeaters listed yet.</p>
+{%- endif -%}
+</div>
