@@ -1,8 +1,6 @@
-# wd4eog.github.io
+# WD4EOG club website and blog
 
-WD4EOG club website and blog
-
-
+- The webpage will be live on [https://wd4eog.github.io](https://wd4eog.github.io/)
 
 ## Basic plan
 
