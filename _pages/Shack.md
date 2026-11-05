@@ -1,6 +1,6 @@
 ---
-permalink: /shack/
-title: "Clemson Shack"
+permalink: /Shack/
+title: Clemson Shack
 classes: wide
 ---
 
