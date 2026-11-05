@@ -63,7 +63,7 @@ plugins:
 #    anonymize_ip         : # true, false (default)
 
 author:
-  name   : "Clemson Amateur Radio Club | WD4EOG"
+  name   : " WD4EOG"
   avatar : "/assets/images/CARC_logo.png"
   bio    : "Come join us and explore the world of Amateur radio at Clemson."
   links:
