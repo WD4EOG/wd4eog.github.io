@@ -5,6 +5,18 @@ WD4EOG club website and blog, live at https://wd4eog.github.io/.
 A [Jekyll](https://jekyllrb.com/) site using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, hosted on GitHub Pages.
 GitHub builds the site automatically on every push. There's no JavaScript to edit.
 
+## Basic plan
+
+- About us
+- Blog
+	- contains updates on projects of other things we do as a club
+- Shack
+	- equipment and radio list and photos
+  - SOP for our setups: docs, PDF guides to how to use stuff
+- People
+	- Group pic of members
+  - Have contact info and call sign and a small bio of officers
+
 ## Updating content
 
 Most content lives in the YAML files in **`_data/`**. Edit one, commit it, and the site rebuilds.
