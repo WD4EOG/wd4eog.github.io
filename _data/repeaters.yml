@@ -7,3 +7,11 @@
   location: "Byrnes Hall rooftop"
   mode: "FM"
   notes: ""
+
+- call: "WD4EOG"
+  output: "145.450"
+  offset: "-0.600"
+  tone: "167.9 Hz"
+  location: "Clemson University"
+  mode: "FM"
+  notes: "Currently offline"
