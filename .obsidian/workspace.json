@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 311.8359375
   },
   "right": {
     "id": "a24066597fe24a73",
@@ -200,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 890.6015625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,8 +216,26 @@
   },
   "active": "b17af762a9bed655",
   "lastOpenFiles": [
-    "_pages/Shack.md",
+    "_posts/2026-11-04-replacing-the-antenna.md",
     "_pages/blog.md",
+    "assets/images/towers.jpg",
+    "assets/images/shack-shelves.jpg",
+    "assets/images/shack-exterior.jpg",
+    "assets/images/meshcore-guide-cover.png",
+    "assets/images/antenna-closeup.jpg",
+    "assets/docs/Introduction-to-MeshCore.pdf",
+    "assets/docs",
+    "assets/css/main.scss",
+    "assets/css",
+    "_posts/2026-11-10-introduction-to-meshcore.md",
+    "_pages/officers.md",
+    "_includes/club/resources.html",
+    "_includes/club/repeaters.html",
+    "_includes/club/officers.html",
+    "_includes/club/mesh-nodes.html",
+    "_includes/club/meetups.html",
+    "_includes/club/guides.html",
+    "_pages/Shack.md",
     "_pages/about.md",
     "README.md",
     "_pages/404.md",
