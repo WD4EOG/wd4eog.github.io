@@ -1,6 +1,11 @@
 # Local MeshCore channels, shown on the Shack page under "Mesh network".
 # qr: a QR code cropped from the app's Share Channel screen.
 
+- name: "CARC"
+  qr: "/assets/images/meshcore-channel-carc.png"
+  key: "b3bbe1015a4680e7ef83667b0a4fac93"
+  notes: "The Clemson Amateur Radio Club's club channel."
+
 - name: "#anderson-county"
   qr: "/assets/images/meshcore-channel-anderson-county.png"
   key: "5e864182358e5be45f4a40ae016be8da"
