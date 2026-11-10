@@ -31,7 +31,7 @@ at the back.
 4. **Range and repeaters:** tips for better signal, checking your signal, our local mesh, and setting up a repeater.
 5. **Help and reference:** troubleshooting, a glossary, and useful links.
 
-The links in the PDF are clickable, so it works on a phone or laptop as well as on paper.
+The links in the PDF are clickable on a phone or laptop, and it also prints well as a handout.
 
 ## Our local mesh
 

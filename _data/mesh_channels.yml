@@ -1,0 +1,17 @@
+# Local MeshCore channels, shown on the Shack page under "Mesh network".
+# qr: a QR code cropped from the app's Share Channel screen.
+
+- name: "#anderson-county"
+  qr: "/assets/images/meshcore-channel-anderson-county.png"
+  key: "5e864182358e5be45f4a40ae016be8da"
+  notes: "Open chat for Anderson County."
+
+- name: "ARC-ClubMesh"
+  qr: "/assets/images/meshcore-channel-arc-clubmesh.png"
+  key: "fa2cc5e4ee4eebbd84b10c624236b7cf"
+  notes: "The Anderson Radio Club's club channel."
+
+- name: "#sc-meshcore"
+  qr: "/assets/images/meshcore-channel-sc-meshcore.png"
+  key: "5691e2e9ebf708f4781a18d15425c829"
+  notes: "Open chat for MeshCore users across South Carolina."

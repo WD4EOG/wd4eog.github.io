@@ -38,6 +38,19 @@
   .meta { font-weight: bold; }
 }
 
+// Channel QR codes: a white frame keeps a scannable quiet zone on any skin.
+.club-qr {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 0.75em;
+  padding: 12px;
+  background: #fff;
+  border-radius: $border-radius;
+  image-rendering: pixelated;
+}
+.club-key code { word-break: break-all; }
+
 a.club-card {
   display: block;
   color: inherit;

@@ -54,6 +54,13 @@ tower about 70&nbsp;ft tall with a Yagi beam antenna.
 
 {% include club/mesh-nodes.html %}
 
+#### Local channels
+
+Scan a code in the MeshCore app: **Menu → Add Channel → Scan QR Code**, or add the channel by name and paste its secret key.
+{: .muted}
+
+{% include club/mesh-channels.html %}
+
 ## Live data
 
 {% include club/dashboards.html %}

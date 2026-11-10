@@ -1,0 +1,13 @@
+{%- comment -%} MeshCore channel cards with QR codes from _data/mesh_channels.yml. {%- endcomment -%}
+<div class="club-grid">
+{%- for c in site.data.mesh_channels -%}
+<article class="club-card">
+<h3>{{ c.name }}</h3>
+{%- if c.qr and c.qr != "" %}<img class="club-qr" src="{{ c.qr | relative_url }}" alt="QR code to add the {{ c.name }} MeshCore channel" loading="lazy">{% endif -%}
+{%- if c.key and c.key != "" %}<p class="club-key">Secret key: <code>{{ c.key }}</code></p>{% endif -%}
+{%- if c.notes and c.notes != "" %}<p class="muted">{{ c.notes }}</p>{% endif -%}
+</article>
+{%- else -%}
+<p class="notice">No channels listed yet.</p>
+{%- endfor -%}
+</div>
