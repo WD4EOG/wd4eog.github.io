@@ -6,7 +6,7 @@ categories:
   - blog
 tags:
   - news
-  - KE8TJE
+  - CARC
 ---
 
-This is what a basic post would look like with some content
+This is our new space to show off what we do at the Clemson Amateur radio club !  Stay tuned with us for updates

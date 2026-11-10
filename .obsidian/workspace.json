@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/blog.md",
+                "file": "_posts/2026-11-04-new-website-and-blog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "blog"
+              "title": "2026-11-04-new-website-and-blog"
             }
           }
         ],
@@ -214,10 +214,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "b17af762a9bed655",
+  "active": "adf1db9984a94243",
   "lastOpenFiles": [
-    "_posts/2026-11-04-replacing-the-antenna.md",
+    "assets/images/meshcore-channel-sc-meshcore.png",
+    "assets/images/meshcore-channel-arc-clubmesh.png",
+    "assets/images/meshcore-channel-anderson-county.png",
+    "_includes/club/mesh-channels.html",
+    "_data/mesh_channels.yml",
+    "_posts/2026-11-10-introduction-to-meshcore.md",
+    "_posts/2026-11-04-new-website-and-blog.md",
+    "_drafts/2026-09-28-sample-Hasith.md",
+    "_drafts/2026-09-01-Bike-packing-route.md",
     "_pages/blog.md",
+    "_posts/2026-11-04-replacing-the-antenna.md",
     "assets/images/towers.jpg",
     "assets/images/shack-shelves.jpg",
     "assets/images/shack-exterior.jpg",
@@ -227,20 +236,14 @@
     "assets/docs",
     "assets/css/main.scss",
     "assets/css",
-    "_posts/2026-11-10-introduction-to-meshcore.md",
     "_pages/officers.md",
     "_includes/club/resources.html",
     "_includes/club/repeaters.html",
     "_includes/club/officers.html",
     "_includes/club/mesh-nodes.html",
-    "_includes/club/meetups.html",
-    "_includes/club/guides.html",
     "_pages/Shack.md",
     "_pages/about.md",
     "README.md",
-    "_pages/404.md",
-    "_posts/2026-11-04-new-website-and-blog.md",
-    "_drafts/2026-09-28-sample-Hasith.md",
-    "_drafts/2026-09-01-Bike-packing-route.md"
+    "_pages/404.md"
   ]
 }
