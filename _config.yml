@@ -56,11 +56,11 @@ plugins:
   - jekyll-include-cache
 
 # Analytics
-# analytics:
-#  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
-#  google:
-#    tracking_id          : "G-KL8MLP357W" 
-#    anonymize_ip         : # true, false (default)
+analytics:
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "GTM-T4B6TWD7" 
+    anonymize_ip         : true #, false (default)
 
 author:
   name   : " WD4EOG"
